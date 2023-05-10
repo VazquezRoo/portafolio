@@ -1,5 +1,12 @@
-.text__shadow{
-    text-shadow:  0px 0px 15px green;
+.letra{
+    text-shadow: 4px 0px 0px  rgb(54, 54, 158);
+}
+.letraDos{
+    text-shadow: 2px 0px 0px  rgb(41, 148, 54);
+}
+
+/* .text__shadow{ */
+    /* text-shadow:  0px 0px 15px green;
 }
 
 .text__home{
@@ -14,7 +21,7 @@
 .text__contact{
     text-shadow: 0px 0px 15px blue;
 }
-    
+     */
 
 
 
@@ -37,7 +44,7 @@
 
 
 
-
+/* 
 .text__home__span{
     text-shadow: 0px 0px 30px green;
 }
@@ -49,11 +56,11 @@
 }
 .text__contact__span{
     text-shadow: 0px 0px 30px blue;
-}
+} */
 
 
 .animation{
-    animation: 1s change linear 1 ;
+    animation: 1.5s change linear 1 ;
 }
 .animation:hover{
     color: rgb(117, 47, 47);
@@ -61,24 +68,48 @@
 }
 
 @keyframes change {
-	0% {
-		margin-top: -100px;
-    }
-    20%{
-        margin-top: 20px;
-    }
-    40%{
-        margin-top: 0px;
-    }
-    60%{
-        margin-top: 20px
+    0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
 
-    }
-    80%{
-        margin-top: 10px;
-    }
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
 	100% {
-		margin-top: 20px;
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
 	}
 }
     
@@ -89,22 +120,23 @@
 
 @keyframes section {
 	0% {
-		margin-left: -200px;
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        -ms-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0
     }
-    /* 20%{
-        margin-top: 20px;
-    }
-    40%{
-        margin-top: 0px;
-    }
-    60%{
-        margin-top: 20px
 
-    }
-    80%{
-        margin-top: 10px;
-    } */
-	100% {
-		margin-left: 0px;
-	}
-}
+    100% {
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        opacity: 1
+    }   
+    
+} 
