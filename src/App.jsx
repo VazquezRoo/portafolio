@@ -14,14 +14,11 @@ function App() {
 
   const {theme} = useSelector(store => store.action)
 
-  // useEffect(()=>{
-  //     setTheme(theme)
-  // },[theme])
 
  
 
   return (
-    <main className={`${theme? 'text-white bg-[url("/images/bg-01.jpg")]':'text-black bg-[url("/images/4907157.jpg")]'} font-Poppins`}>
+    <main className={`App ${theme? 'text-white bg-[url("/images/bg-01.jpg")]':'text-black bg-[url("/images/4907157.jpg")]'} font-Poppins`}>
       <Header theme={theme} />
       <Routes>
 

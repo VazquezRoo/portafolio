@@ -28,7 +28,7 @@ function Skills() {
       </div>
 
       <div   className='self-start pt-14 min-[600px]:justify-self-center'>
-        <i class='bx bx-atom text-green-500 text-[25px]'></i>
+        <i className='bx bx-atom text-green-500 text-[25px]'></i>
         <h4 className='text-[20px]'><b>Frameworks</b></h4>
         <ul className='text-[14px] mt-[10px]'>
           <li>React</li>
@@ -38,7 +38,7 @@ function Skills() {
       </div>
 
       <div className='self-start min-[600px]:pt-14  min-[600px]:justify-self-center'>
-      <i class='bx bx-atom  text-green-500 text-[25px]'></i>
+      <i className='bx bx-atom  text-green-500 text-[25px]'></i>
         <h4 className='text-[20px]'><b>Source control  </b></h4>
         <ul className='text-[14px] mt-[10px]'>
           <li>Git</li>
@@ -48,7 +48,7 @@ function Skills() {
       </div>
 
       <div className='self-start min-[600px]:justify-self-center  min-[600px]:col-start-2'>
-      <i class='bx bx-atom  text-green-500 text-[25px]'></i>
+      <i className='bx bx-atom  text-green-500 text-[25px]'></i>
         <h4 className='text-[20px]'><b>Languages</b></h4>
         <ul className='text-[14px] mt-[10px]'>
           <li>Html</li>
