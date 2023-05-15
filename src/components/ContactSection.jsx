@@ -1,6 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-function ContactSection({theme}) {
+function ContactSection({}) {
+
+  const {theme} = useSelector(store => store.action)
+
+
   return (
     <div className={`grid p-4 w-[100%] h-[500px] ${theme? 'bg-black/20 ': 'bg-white'} mt-[20px] rounded-md  `}>
         <div className='grid h-[20%] gap-2 w-[100%]'>

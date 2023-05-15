@@ -2,8 +2,13 @@ import React from 'react'
 import Header from '../components/Header'
 import ModalCard from '../components/ModalCard'
 import ProjectsSection from '../components/ProjectsSection'
+import { useSelector } from 'react-redux'
 
-function Projects({theme}) {
+function Projects({}) {
+
+  const {theme} = useSelector(store => store.action)
+
+
   return (
     <main className='grid  min-h-screen  bg-cover justify-center'>
 

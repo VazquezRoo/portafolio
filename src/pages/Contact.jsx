@@ -4,9 +4,15 @@ import ModalCard from '../components/ModalCard'
 import ContactSection from '../components/ContactSection'
 import Skills from '../components/Skills'
 import Projects from './Projects'
+import { useSelector } from 'react-redux'
 
-function Contact({theme}) {
+function Contact({}) {
+
+  const {theme} = useSelector(store => store.action)
+
+
   return (
+
     <main className=' min-h-screen bg-cover grid justify-center justify-items-center'>
       
     

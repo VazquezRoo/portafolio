@@ -4,11 +4,11 @@ import { changeShowModal, changeExitModalButton } from '../store/slice/actions.s
 import "./styles.css"
 import { Link } from 'react-router-dom'
 
-function ModalCard({theme}) {
+function ModalCard({}) {
 
   const dispatch = useDispatch()
 
-  const {isShowModal, exitModalButton} = useSelector(store => store.action)
+  const {isShowModal, exitModalButton,theme} = useSelector(store => store.action)
 
   const handleClickShowMenu = () =>{
     dispatch(changeShowModal())
@@ -23,22 +23,22 @@ function ModalCard({theme}) {
 
         <div className='grid' >
 
-        <Link onClick={isShowModal} to={'/'} href="" className="nav text__home">
-         <span className={`${exitModalButton && 'animation__section'}  ${theme?'text-white/20':'text-black/20'} text-3xl text__home__span`}>01 </span> <span className=' tracking-[4px]'> Home </span>
+        <Link onClick={handleClickShowMenu} to={'/'} href="" className="nav text__home">
+         <span className={`  ${theme?'text-white/20':'text-black/20'} text-3xl text__home__span`}>01 </span> <span className=' tracking-[4px]'> Home </span>
         </Link>
        
         </div>
 
-        <Link onClick={isShowModal}  to={'/about'} href="" className="nav text__about">
-        <span  className={`${exitModalButton && 'animation__section'}  ${theme?'text-white/20':'text-black/20'} text-3xl text__about__span`}>02 </span> <span className=' tracking-[4px]'>About</span>
+        <Link onClick={handleClickShowMenu}  to={'/about'} href="" className="nav text__about">
+        <span  className={` ${theme?'text-white/20':'text-black/20'} text-3xl text__about__span`}>02 </span> <span className=' tracking-[4px]'>About</span>
         </Link>
 
-        <Link onClick={isShowModal}  to={'/projects'} href="" className="nav text__projects">
-        <span  className={`${exitModalButton && 'animation__section'}  ${theme?'text-white/20':'text-black/20'} text-3xl text__projects__span`}>03 </span> <span className=' tracking-[4px]'>Projects</span>
+        <Link onClick={handleClickShowMenu}  to={'/projects'} href="" className="nav text__projects">
+        <span  className={`  ${theme?'text-white/20':'text-black/20'} text-3xl text__projects__span`}>03 </span> <span className=' tracking-[4px]'>Projects</span>
         </Link>
 
-        <Link onClick={isShowModal}  to={'/contact'} href="" className="nav text__contact">
-        <span  className={`${exitModalButton && 'animation__section'}  ${theme?'text-white/20':'text-black/20'} text-3xl text__contact__span`}>04 </span> <span className=' tracking-[4px]'>Contact</span>
+        <Link onClick={handleClickShowMenu}  to={'/contact'} href="" className="nav text__contact">
+        <span  className={`  ${theme?'text-white/20':'text-black/20'} text-3xl text__contact__span`}>04 </span> <span className=' tracking-[4px]'>Contact</span>
         </Link>
       </nav>
 

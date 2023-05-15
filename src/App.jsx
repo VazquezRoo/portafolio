@@ -6,37 +6,37 @@ import { Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import Log from './pages/Log'
 import Footer from './components/Footer'
-import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import ModalCard from './components/ModalCard'
+import { useSelector } from 'react-redux'
 
 function App() {
 
-  const [theme, setTheme] = useState(true)
+  const {theme} = useSelector(store => store.action)
 
-  useEffect(()=>{
-      setTheme(theme)
-  },[theme])
+  // useEffect(()=>{
+  //     setTheme(theme)
+  // },[theme])
 
  
 
   return (
-    <main className={`${theme? 'text-white bg-[url("/images/bg-01.jpg")]':'text-black bg-[url("/images/4907157.jpg")]'}`}>
-      <Header theme={theme} setTheme={setTheme}/>
+    <main className={`${theme? 'text-white bg-[url("/images/bg-01.jpg")]':'text-black bg-[url("/images/4907157.jpg")]'} font-Poppins`}>
+      <Header theme={theme} />
       <Routes>
 
     
-       <Route path='/' element={<Home theme={theme}/>} />
+       <Route path='/' element={<Home />} />
 
-       <Route path='/about' element={<About  theme={theme}/>} />
+       <Route path='/about' element={<About  />} />
 
-       <Route path='/projects' element={<Projects theme={theme} setTheme={setTheme}/>} />
+       <Route path='/projects' element={<Projects  />} />
 
-       <Route path='/contact' element={<Contact theme={theme} setTheme={setTheme}/>} />
+       <Route path='/contact' element={<Contact  />} />
 
       </Routes>
-      <ModalCard theme={theme}/>
-      <Footer theme={theme}/>
+      <ModalCard />
+      <Footer />
     </main>
     
     

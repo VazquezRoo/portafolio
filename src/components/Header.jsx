@@ -1,10 +1,13 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { changeShowModal, changeExitModalButton } from "../store/slice/actions.slice";
+import { useDispatch, useSelector } from "react-redux";
+import { changeShowModal, changeExitModalButton, changeTheme } from "../store/slice/actions.slice";
 import "./styles.css"
 import { Link } from "react-router-dom";
 
-function Header({theme, setTheme}) {
+function Header({}) {
+
+  const {theme} = useSelector(store => store.action)
+
 
   const dispatch = useDispatch()
 
@@ -13,37 +16,37 @@ function Header({theme, setTheme}) {
     dispatch(changeExitModalButton())
   }
 
-  const hobbies = [
-    'soccer player',
-    'optimist',
-    'superhero movie fan',
+  // const hobbies = [
+  //   'soccer player',
+  //   'optimist',
+  //   'superhero movie fan',
 
-  ]
+  // ]
 
-  const changeTheme = () =>{
-    setTheme(!theme)
+  const changeThemeOffOn = () =>{
+    dispatch(changeTheme())
   }
 
 
 
   return (
-   <div className="w-full">
+   <div className={``}>
 
       
 
-    <div className= {`  place-self-center ${theme? 'bg-black': 'bg-white'} h-[120px] flex justify-center opacity-0 invisible absolute min-[600px]:w-screen min-[600px]:opacity-100 min-[600px]:fixed min-[600px]:visible z-50  pb-[25px]`}>
+    <div className= {` w-[100px]  place-self-center ${theme? 'bg-black': 'bg-white'} h-[120px] flex justify-center opacity-0 invisible absolute min-[600px]:w-screen min-[600px]:opacity-100 min-[600px]:fixed min-[600px]:visible z-50  pb-[25px] px-[50px] min-[990px]:px-[100px] `}>
       
     <div className="self-end " >
             
-           <button onClick={changeTheme}>
+           <button onClick={changeThemeOffOn}>
             {
-              theme? <i class='bx bxs-sun text-[30px]'></i>: <i class='bx bx-moon text-[30px]' ></i>
+              theme? <i className='bx bxs-sun text-[30px]'></i>: <i className='bx bx-moon text-[30px]' ></i>
             }
            </button>
     </div>
        
       
-      <div className=" h-full  max-w-[1200px] w-[100%] flex gap-6 min-[1000px]:text-[20px] min-[1000px]:gap-16 items-end justify-end min-[800px]:text-[20px]">
+      <div className=" h-full  max-w-[1200px] w-[100%] flex gap-6 min-[1000px]:text-[20px] min-[1000px]:gap-16 items-end justify-end min-[800px]:text-[20px] ">
         <Link to={'/'} className="hover:text-purple-600 grid"><p> Home</p></Link>
         <Link to={'/about'} className="hover:text-purple-600"><p> About</p></Link>
         <Link to={'/projects'} className="hover:text-purple-600"><p> Projects</p></Link>
@@ -69,18 +72,18 @@ function Header({theme, setTheme}) {
             </div> */}
 
 
-  <div className=" justify-items-center right-2  mt-2 fixed top-0 flex  rounded-full min-[600px]:invisible min-[600px]:opacity-0 min-[600px]:absolute w-full justify-between pl-6 ">
+  <div className=" justify-items-center right-2  mt-2 fixed top-0 flex  rounded-full min-[600px]:invisible min-[600px]:opacity-0 min-[600px]:absolute w-full justify-between pl-6 "bbbb>
 
   <div >
             
-           <button onClick={changeTheme} className="z-50 pt-2">
+           <button onClick={changeThemeOffOn} className="z-50 pt-2">
             {
-              theme? <i class='bx bxs-sun text-[30px]'></i>: <i class='bx bx-moon text-[30px]' ></i>
+              theme? <i className='bx bxs-sun text-[30px]'></i>: <i className='bx bx-moon text-[30px]' ></i>
             }
            </button>
     </div>
 
-  <button onClick={handleClickShowMenu} className={`grid z-50 sticky ${theme? 'text-white': 'text-black'} text-3xl justify-items-center  pt-[10px] w-[40px] h-[40px] rounded-[50%]  cursor-pointer  `}><i class='bx bx-dialpad-alt'></i></button>
+  <button onClick={handleClickShowMenu} className={`grid z-50 sticky ${theme? 'text-white': 'text-black'} text-3xl justify-items-center  pt-[10px] w-[40px] h-[40px] rounded-[50%]  cursor-pointer  `}><i className='bx bx-dialpad-alt'></i></button>
   </div>
 
   </div>

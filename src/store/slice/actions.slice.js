@@ -4,7 +4,8 @@ const initialState = {
     task: [],
     isShowModal: false,
     taskToEdit:null,
-    exitModalButton:false
+    exitModalButton:false,
+    theme:true,
 
 
 }
@@ -19,11 +20,14 @@ const actionSlice = createSlice({
         changeExitModalButton: state => {
             state.exitModalButton = !state.exitModalButton
         },
+        changeTheme: state=>{
+            state.theme = !state.theme
+        }
 
     }
 })
 
 
-export const{changeShowModal, changeExitModalButton} = actionSlice.actions
+export const{changeShowModal, changeExitModalButton, changeTheme} = actionSlice.actions
 
 export default actionSlice.reducer

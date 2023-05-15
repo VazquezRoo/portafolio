@@ -2,8 +2,13 @@ import React from 'react'
 import ModalCard from '../components/ModalCard'
 import Header from '../components/Header'
 import Skills from '../components/Skills'
+import { useSelector } from 'react-redux'
 
-function About({theme}) {
+function About({}) {
+
+  const {theme} = useSelector(store => store.action)
+
+
   return (
     <div className='flex flex-col items-center min-h-screen justify-center'>
 
