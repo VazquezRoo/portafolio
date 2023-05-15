@@ -20,10 +20,10 @@ function Footer({}) {
          </div>
          <div className='grid justify-center items-center'>
            <ul className='grid gap-2'>
-        {/*  <a href='home' className='hover:text-purple-500'>Home</a>
-            <a href='about'  className='hover:text-purple-500'>About</a>
-            <a href='projects'  className='hover:text-purple-500'>Projects</a>
-            <a href='contact' className='hover:text-purple-500'>Contact</a> */}
+         {/* <a href='home' className='hover:text-purple-500'>Home</a>
+            <a href='about_home'  className='hover:text-purple-500'>About</a>
+            <a href='projects_home'  className='hover:text-purple-500'>Projects</a>
+            <a href='contact_home' className='hover:text-purple-500'>Contact</a> */}
             <Link to={'/'} className='hover:text-purple-500'>Home</Link>
             <Link to={'/about'} className='hover:text-purple-500'>About</Link>
             <Link to={'/projects'} className='hover:text-purple-500'>Porjects</Link>
