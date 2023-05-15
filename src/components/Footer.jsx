@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-function Footer({}) {
+function Footer({link}) {
 
   const {theme} = useSelector(store => store.action)
 
@@ -20,14 +20,12 @@ function Footer({}) {
          </div>
          <div className='grid justify-center items-center'>
            <ul className='grid gap-2'>
-         {/* <a href='home' className='hover:text-purple-500'>Home</a>
-            <a href='about_home'  className='hover:text-purple-500'>About</a>
-            <a href='projects_home'  className='hover:text-purple-500'>Projects</a>
-            <a href='contact_home' className='hover:text-purple-500'>Contact</a> */}
-            <Link to={'/'} className='hover:text-purple-500'>Home</Link>
-            <Link to={'/about'} className='hover:text-purple-500'>About</Link>
-            <Link to={'/projects'} className='hover:text-purple-500'>Porjects</Link>
-            <Link to={'/contact'} className='hover:text-purple-500'>Contact</Link> 
+        
+           <a href='/' className='hover:text-purple-500'>Home</a>
+            
+            <a href={'/about'} className='hover:text-purple-500'>About</a>
+            <a href={'/projects'} className='hover:text-purple-500'>Porjects</a>
+            <a href={'/contact'} className='hover:text-purple-500'>Contact</a> 
           </ul>
          </div>
 

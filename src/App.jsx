@@ -23,7 +23,7 @@ function App() {
       <Routes>
 
     
-       <Route path='/' element={<Home />} />
+       <Route id='home-home' path='/' element={<Home />} />
 
        <Route path='/about' element={<About  />} />
 
@@ -33,7 +33,7 @@ function App() {
 
       </Routes>
       <ModalCard />
-      <Footer />
+      <Footer  link='home-home'/>
     </main>
     
     
