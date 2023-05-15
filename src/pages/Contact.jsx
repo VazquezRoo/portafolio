@@ -6,9 +6,14 @@ import Skills from '../components/Skills'
 import Projects from './Projects'
 import { useSelector } from 'react-redux'
 
+
+// npm i @emailjs/browser
+
 function Contact({}) {
 
   const {theme} = useSelector(store => store.action)
+
+ 
 
 
   return (
