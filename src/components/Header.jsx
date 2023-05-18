@@ -52,8 +52,8 @@ function Header({}) {
       <div className=" h-full  max-w-[1200px] w-[100%] flex gap-6 min-[1000px]:text-[20px] min-[1000px]:gap-16 items-end justify-end min-[800px]:text-[20px] scroll-smooth">
       
       <div className="h-full w-full flex items-end pl-10 gap-3">
-      <Link target='_blank' to={'https://www.linkedin.com/in/cristian-vazquez-roo/'} className="w-[30px] aspect-square"><img src="/images/skills/github.png" alt="" className="hover:opacity-50" /></Link>
-      <Link target='_blank' className="w-[30px] aspect-square"><img src="/images/Linkedin.png" alt="" className="hover:opacity-50" /></Link>
+      <Link target='_blank' to={'https://github.com/VazquezRoo'}  className="w-[30px] aspect-square"><img src="/images/skills/github.png" alt="" className="hover:opacity-50" /></Link>
+      <Link target='_blank'  to={'https://www.linkedin.com/in/cristian-vazquez-roo/'} className="w-[30px] aspect-square"><img src="/images/Linkedin.png" alt="" className="hover:opacity-50" /></Link>
       <Link to="https://api.whatsapp.com/send?phone=6531007177"><i className='bx bxl-whatsapp text-green-500 text-[25px]' ></i></Link>
       </div>
       
