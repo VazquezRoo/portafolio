@@ -44,7 +44,7 @@ function ModalCard({}) {
         <div className="grid grid-cols-3 w-full">
       <Link target='_blank' to={'https://github.com/VazquezRoo'}  className="w-[30px] aspect-square justify-self-end"><img src="/images/skills/github.png" alt="" className="hover:opacity-50" /></Link>
       <Link target='_blank'  to={'https://www.linkedin.com/in/cristian-vazquez-roo/'} className="w-[30px] aspect-square justify-self-center"><img src="/images/Linkedin.png" alt="" className="hover:opacity-50 " /></Link>
-      <Link target='_blank' to="https://api.whatsapp.com/send?phone=526531007185"><i className='bx bxl-whatsapp justify-self-start text-green-500 text-[30px] hover:opacity-50' ></i></Link>
+      <Link target='_blank' to="htpps://wa.me/526531007185"><i className='bx bxl-whatsapp justify-self-start text-green-500 text-[30px] hover:opacity-50' ></i></Link>
       </div>
       </nav>
 
