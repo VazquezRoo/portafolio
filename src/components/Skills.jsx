@@ -23,8 +23,8 @@ function Skills() {
      
 
       <div className='max-w-[300px]  min-[600px]:row-span-2'>
-        <h3 className=' pt-10 text-[25px] min-[600px]:text-[30px]  min-[1000px]:text-[40px]'>My Skills</h3>
-        <p className=' min-[600px]:text-[20px]' >With skills in  different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
+        <h3 className=' pt-10 text-[25px] min-[600px]:text-[30px]  min-[1000px]:text-[40px]'>Mis aptitudes</h3>
+        <p className=' min-[600px]:text-[20px]' >Tengo habilidades en distintos campos del desarrollo, soy la persona perfecta para realizar tus proyectos. Sea cual sea la necesidad, puedo asumir cualquier desafio y adaptarme a cualquier situacion.</p>
       </div>
 
       <div   className='self-start pt-14 min-[600px]:justify-self-center'>
@@ -49,7 +49,7 @@ function Skills() {
 
       <div className='self-start min-[600px]:justify-self-center  min-[600px]:col-start-2'>
       <i className='bx bx-atom  text-green-500 text-[25px]'></i>
-        <h4 className='text-[20px]'><b>Languages</b></h4>
+        <h4 className='text-[20px]'><b>Lenguajes</b></h4>
         <ul className='text-[14px] mt-[10px]'>
           <li>Html</li>
           <li>Css</li>
@@ -69,17 +69,19 @@ function Skills() {
 
 
 
-    {/* <div className='text-white flex gap-4 flex-wrap mt-[30px] justify-center  min-[1000px]:text-[20px]'>
-      <p className=' bg-gray-600 text-[13px] px-6 rounded-sm'>HTML</p>
+    <div className='text-white flex gap-4 flex-wrap mt-[30px] justify-center  min-[1000px]:text-[20px] min-[600px]:row-start-4 min-[600px]:col-span-3'>
+      <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>HTML</p>
       <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>CSS</p>
       <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>JavaScript</p>
       <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>React</p>
-      <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>GIT</p>
+      <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>Git</p>
       <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>GitHub</p>
-      <p className=' bg-gray-600 text-[18px] px-4 rounded-sm'>Responsive Design</p>
+      <p className=' bg-gray-600 text-[20px] px-4 rounded-sm'>Responsive Design</p>
       <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>Tailwind</p>
+      <p className=' bg-gray-600 text-[20px] px-6 rounded-sm'>Redux</p>
+
      
-    </div> */}
+    </div>
     </div>
   )
 }

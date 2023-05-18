@@ -12,20 +12,25 @@ function Footer({link}) {
 
         <div className='flex flex-col justify-center items-start  '>
           <h4>Vazquez Roo</h4>
-          <p>Thanks for reading!</p>
+          <p>Gracias por leer!</p>
           <p><i className='bx bx-envelope'></i> vazquez.roo93@gmail.com</p>
           <p><i className='bx bx-phone' ></i> (653) 100-7177</p>
           
-          <p className='pt-[30px] '>&copy; 2023 Cristian Vazquez. All rights reserved.</p>
+          <p className='pt-[30px] '>&copy; 2023 Cristian Vazquez. Derechos reservados.</p>
          </div>
          <div className='grid justify-center items-center'>
-           <ul className='grid gap-2'>
+           <ul className='grid gap-2 justify-items-center'>
+           <div className="h-full w-full flex gap-3">
+      <Link target='_blank' to={'https://www.linkedin.com/in/cristian-vazquez-roo/'} className="w-[30px] aspect-square"><img src="/images/skills/github.png" alt="" className="hover:opacity-50" /></Link>
+      <Link target='_blank' className="w-[30px] aspect-square"><img src="/images/Linkedin.png" alt="" className="hover:opacity-50" /></Link>
+      <Link to="https://api.whatsapp.com/send?phone=6531007177"><i className='bx bxl-whatsapp text-green-500 text-[25px]' ></i></Link>
+      </div>
         
-           <a href='/' className='hover:text-purple-500'>Home</a>
+           <a  href='#home'  className='hover:text-purple-500'>Inicio</a>
             
-            <a href={'/about'} className='hover:text-purple-500'>About</a>
-            <a href={'/projects'} className='hover:text-purple-500'>Porjects</a>
-            <a href={'/contact'} className='hover:text-purple-500'>Contact</a> 
+            <a  href='#skills'  className='hover:text-purple-500'>Sobre mi</a>
+            <a href='#projects' className='hover:text-purple-500'>Proyectos</a>
+            <a href='#contact' className='hover:text-purple-500'>Contacto</a> 
           </ul>
          </div>
 

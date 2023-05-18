@@ -1,39 +1,28 @@
 import './App.css'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
 import Home from './pages/Home'
-import { Route, Routes } from 'react-router-dom'
-import About from './pages/About'
-import Log from './pages/Log'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import ModalCard from './components/ModalCard'
-import { useSelector } from 'react-redux'
+import {useSelector } from 'react-redux'
 
 function App() {
 
   const {theme} = useSelector(store => store.action)
 
 
- 
+
+
 
   return (
-    <main className={`App ${theme? 'text-white bg-[url("/images/bg-01.jpg")]':'text-black bg-[url("/images/4907157.jpg")]'} font-Poppins`}>
-      <Header theme={theme} />
-      <Routes>
+    <main id='home' className={`App ${theme? 'text-white bg-[url("/images/bg-01.jpg")]':'text-black bg-[url("/images/4907157.jpg")]'} font-Poppins scroll-smooth`}>
+     <Header />
 
-    
-       <Route id='home-home' path='/' element={<Home />} />
 
-       <Route path='/about' element={<About  />} />
-
-       <Route path='/projects' element={<Projects  />} />
-
-       <Route path='/contact' element={<Contact  />} />
-
-      </Routes>
+      <Home/>
+      
       <ModalCard />
-      <Footer  link='home-home'/>
+
+      <Footer/>
     </main>
     
     

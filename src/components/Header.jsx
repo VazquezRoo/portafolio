@@ -34,7 +34,7 @@ function Header({}) {
 
       
 
-    <div className= {` w-[100px]  place-self-center ${theme? 'bg-black': 'bg-white'} h-[120px] flex justify-center opacity-0 invisible absolute min-[600px]:w-screen min-[600px]:opacity-100 min-[600px]:fixed min-[600px]:visible z-50  pb-[25px] px-[50px] min-[990px]:px-[100px] `}>
+    <div className= {` w-[100px]  place-self-center ${theme? 'bg-black': 'bg-white'} h-[80px] flex justify-center opacity-0 invisible absolute min-[600px]:w-screen min-[600px]:opacity-100 min-[600px]:fixed min-[600px]:visible z-50  pb-[25px] px-[50px] min-[990px]:px-[100px] `}>
       
     <div className="self-end " >
             
@@ -44,13 +44,23 @@ function Header({}) {
             }
            </button>
     </div>
+    {/* <div className="grid items-end ">
+      <Link className="w-[30px] aspect-square"><img src="/images/skills/github.png" alt="" className="w-" /></Link>
+    </div> */}
        
       
-      <div className=" h-full  max-w-[1200px] w-[100%] flex gap-6 min-[1000px]:text-[20px] min-[1000px]:gap-16 items-end justify-end min-[800px]:text-[20px] ">
-        <Link to={'/'} className="hover:text-purple-600 grid"><p> Home</p></Link>
-        <Link to={'/about'} className="hover:text-purple-600"><p> About</p></Link>
-        <Link to={'/projects'} className="hover:text-purple-600"><p> Projects</p></Link>
-        <Link to={'/contact'} className="hover:text-purple-600"><p> Contact</p></Link>
+      <div className=" h-full  max-w-[1200px] w-[100%] flex gap-6 min-[1000px]:text-[20px] min-[1000px]:gap-16 items-end justify-end min-[800px]:text-[20px] scroll-smooth">
+      
+      <div className="h-full w-full flex items-end pl-10 gap-3">
+      <Link target='_blank' to={'https://www.linkedin.com/in/cristian-vazquez-roo/'} className="w-[30px] aspect-square"><img src="/images/skills/github.png" alt="" className="hover:opacity-50" /></Link>
+      <Link target='_blank' className="w-[30px] aspect-square"><img src="/images/Linkedin.png" alt="" className="hover:opacity-50" /></Link>
+      <Link to="https://api.whatsapp.com/send?phone=6531007177"><i className='bx bxl-whatsapp text-green-500 text-[25px]' ></i></Link>
+      </div>
+      
+        <a href="#home" className="hover:text-purple-600 scroll-smooth"><p> Inicio</p></a>
+        <a href="#skills" className="hover:text-purple-600 scroll-smooth"><p> Conoceme</p></a>
+        <a href="#projects" className="hover:text-purple-600 scroll-smooth"><p> Proyectos</p></a>
+        <a href="#contact" className="hover:text-purple-600 scroll-smooth"><p> Contacto</p></a>
 
       </div>
     </div>
