@@ -13,14 +13,17 @@ function Home({}) {
   
 
   return (
-    <main className=' min-h-screen  bg-cover grid justify-center justify-items-center'>
+    <main className=' min-h-screen  bg-cover grid justify-center justify-items-center z-50'>
 
-    <div id='home' className=' self-center grid w-[80%] w-max-[600px]  pt-[60px] text-[25px] tracking-[4px] min-[600px]:mt-[100px] min-[600px]:text-[40px] min-[800px]:text-[50px]'>
+    <div id='home' className=' self-center min-[1000px]:grid-cols-2 grid w-[80%] w-max-[600px]  pt-[60px] text-[25px] tracking-[4px] min-[600px]:mt-[100px] min-[600px]:text-[40px] min-[800px]:text-[50px] gap-10'>
 
       <div>
       <h3>Hola,</h3>
       <p> Yo soy <span className={`${theme?'letra':'letraDos'}`}>Cris</span>,</p>
       <p> Desarrollador Front-End </p>
+      </div>
+      <div className=' w-full '>
+        <img src="/images/img.png" alt="" className='grid object-contain h-[400px] mx-auto z-[100]'/>
       </div>
       
     

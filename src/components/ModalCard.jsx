@@ -18,7 +18,7 @@ function ModalCard({}) {
  
 
   return (
-    <header className={`z-30 fixed top-0 right-0 left-0 bottom-0 ${theme? 'bg-black': 'bg-white'} flex font-semibold text-4xl justify-center ${isShowModal ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+    <header className={`z-30 fixed top-0 right-0 left-0 bottom-0 ${theme? 'bg-black': 'bg-white'} flex font-semibold text-4xl justify-center ${isShowModal ? 'opacity-100 visible' : 'opacity-0 invisible'} `}>
         <nav className='flex flex-col items-start gap-20 self-center justify-start '>
 
         <div className='grid' >

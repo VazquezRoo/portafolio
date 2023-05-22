@@ -34,7 +34,7 @@ function Header({}) {
 
       
 
-    <div className= {` w-[100px]  place-self-center ${theme? 'bg-black': 'bg-white'} h-[80px] flex justify-center opacity-0 invisible absolute min-[600px]:w-screen min-[600px]:opacity-100 min-[600px]:fixed min-[600px]:visible z-50  pb-[25px] px-[50px] min-[990px]:px-[100px] `}>
+    <div className= {` w-[100px]  place-self-center ${theme? 'bg-black': 'bg-white'} h-[80px] flex justify-center opacity-0 invisible absolute min-[600px]:w-screen min-[600px]:opacity-100 min-[600px]:fixed min-[600px]:visible z-50  pb-[25px] px-[50px] min-[990px]:px-[100px]`}>
       
     <div className="self-end " >
             

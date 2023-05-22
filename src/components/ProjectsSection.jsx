@@ -141,7 +141,7 @@ function ProjectsSection({}) {
         projects.map(project =>
           // <div key={project.id} className='grid justify-center'>
           <div key={project.id} className={` grid gap-2 border-[1px] border-white/50 rounded-md pt-4 w-[80
-            %] max-w-[500px] ${theme? 'bg-black': 'bg-gray-200/80'}`}>
+            %] max-w-[500px] ${theme? 'bg-black': 'bg-gray-200/80'}   `}>
 
             <div className='relative group max-h-[270px]'>
               <img src={project.img.uno} alt="" className='w-full h-full group-hover:opacity-0 group-hover:invisible  duration-500 transition-opacity'/>
