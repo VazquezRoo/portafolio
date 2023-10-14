@@ -24,6 +24,11 @@ function Home({}) {
             <span className={`${theme ? "letra" : "letraDos"}`}>Cris</span>,
           </p>
           <p> Desarrollador Web Full-Stack </p>
+          <a target="_blank" href="/CVCristianVazquez.pdf">
+            <p className="hover:text-purple-600 scroll-smooth min-[600px]:text-[15px] text-[10px]">
+              Descargar CV
+            </p>
+          </a>
         </div>
         <div className=" w-full ">
           <img
